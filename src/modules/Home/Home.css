@@ -1,0 +1,26 @@
+.rounded-circle {
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    transition: all 0.3s;
+}
+
+.rounded-circle:hover {
+    transform: scale(1.15);
+    filter: none;
+    -webkit-filter: none;
+}
+
+.icons img {
+    width: 75px;
+
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    transition: all 0.3s;
+}
+
+.icons img:hover {
+
+    transform: scale(1.15);
+    filter: none;
+    -webkit-filter: none;
+}
