@@ -4,6 +4,8 @@ import profilePic from '../../assets/profile-pic.png';
 import pinkCat from '../../assets/pink_cat.jpg';
 import orangeCafe from '../../assets/orange_cafe.jpg';
 import goldFrog from '../../assets/gold_frog.jpg';
+import warbler from '../../assets/warbler.png';
+import friender from '../../assets/friender.png';
 import './Home.css';
 
 /** Main body content for home page
@@ -35,25 +37,30 @@ function Home() {
                     <div className="card">
                         <img src="..." className="card-img-top" alt="..." />
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 className="card-title">Jobly</h5>
+                            <p className="card-text">A job application site built with React and Express.</p>
                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                            <a className="btn btn-outline-primary" href="https://max-shpungin-react-jobly-backend.onrender.com/">Go!</a>
                         </div>
                     </div>
                     <div className="card">
-                        <img src="..." className="card-img-top" alt="..." />
+                        <img src={warbler} className="card-img-top" alt="..." />
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                            <h5 className="card-title">Warbler</h5>
+                            <p className="card-text">A twitter clone except with warbles :D.</p>
+                            <a className="btn btn-outline-dark" href="https://github.com/max-shpungin/warbler/">Github</a>
+                            <a className="btn btn-outline-primary" href="https://max-shpungin-warbler.onrender.com/">View on Render</a>
+
                         </div>
                     </div>
                     <div className="card">
-                        <img src="..." className="card-img-top" alt="..." />
+                        <img src={friender} className="card-img-top" alt="..." />
                         <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <h5 className="card-title">Friender</h5>
+                            <p className="card-text">A live chatroom built with websockets.</p>
                             <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                            <a className="btn btn-outline-dark" href="https://github.com/max-shpungin/friender-frontend">Github</a>
+                            <a className="btn btn-outline-primary" href="https://mes-friender-front.onrender.com/chatroom">View on Render</a>
                         </div>
                     </div>
                 </div>

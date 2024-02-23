@@ -1,3 +1,5 @@
+import './IconPanel.css'
+
 /** Icon panel - display various icons
  * props:
  * state:

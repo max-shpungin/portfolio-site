@@ -1,0 +1,15 @@
+.icons img {
+  width: 50px;
+
+  filter: gray;
+  /* -webkit-filter: grayscale(1); */
+  transition: all 0.3s;
+  margin: 5px;
+}
+
+.icons img:hover {
+
+  transform: scale(1.15);
+  filter: none;
+  -webkit-filter: none;
+}
