@@ -32,6 +32,8 @@ function Home() {
 
             <div className="row">
 
+                <button className='btn btn-primary'>HERRO THARRRR</button>
+
 
                 <div className="card-group">
                     <div className="card">

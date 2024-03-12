@@ -9,3 +9,8 @@
     filter: none;
     -webkit-filter: none;
 }
+
+[class*="primary"] {
+    color: greenyellow;
+    background-color: greenyellow;
+}
