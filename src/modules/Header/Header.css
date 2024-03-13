@@ -5,6 +5,7 @@
 .contact {
   border-color: #FFC104;
   position: fixed;
+  z-index: 9;
 }
 
 .contact:hover {
@@ -12,11 +13,15 @@
 }
 
 .navbar-toggler-icon {
-  border: 1px solid black;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
   border-radius: 50%;
   position: fixed;
+  z-index: 9;
 }
 
 .navbar-toggler-icon:hover {
   background-color: #FFC104;
+  color: white;
 }

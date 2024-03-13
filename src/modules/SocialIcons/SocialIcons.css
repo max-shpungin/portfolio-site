@@ -1,0 +1,10 @@
+.icon {
+  width: 50px;
+  transition: all 0.3s;
+  filter: contrast(0);
+}
+
+.icon:hover {
+  transform: scale(1.25);
+  filter: none;
+}
