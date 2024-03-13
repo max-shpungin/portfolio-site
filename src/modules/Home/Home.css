@@ -1,3 +1,7 @@
+.max-image-size {
+    max-width: 300px;
+}
+
 .rounded-circle {
     filter: gray;
     -webkit-filter: grayscale(1);
@@ -10,7 +14,38 @@
     -webkit-filter: none;
 }
 
-[class*="primary"] {
-    color: greenyellow;
-    background-color: greenyellow;
+.card {
+    transition: .3s;
+}
+.card:hover {
+    transform: translateY(-1rem);
+    filter: none;
+    -webkit-filter: none;
+}
+
+.projects {
+    max-width: 700px;
+}
+
+.name {
+    font-weight: bold;
+    color: #FFC107;
+}
+
+.name:hover {
+    background-color: rgba(0, 0, 0, 0.664);
+}
+
+.cool-things {
+    background: linear-gradient(to top, #FFC104 30%, transparent 30%)
+}
+
+.cool-things:hover {
+    background-color: #FFC104 ;
+    transition: .2s
+  }
+
+.Featured {
+    background-color: rgb(0, 8, 38);
+    color: white;
 }

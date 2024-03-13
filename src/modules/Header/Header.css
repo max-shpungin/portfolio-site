@@ -1,0 +1,22 @@
+.contact-text {
+  background: linear-gradient(to top,#FFC104 40%, transparent 40%);
+}
+
+.contact {
+  border-color: #FFC104;
+  position: fixed;
+}
+
+.contact:hover {
+  background-color: #FFC104 !important;
+}
+
+.navbar-toggler-icon {
+  border: 1px solid black;
+  border-radius: 50%;
+  position: fixed;
+}
+
+.navbar-toggler-icon:hover {
+  background-color: #FFC104;
+}

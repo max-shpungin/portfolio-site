@@ -9,7 +9,11 @@
 
 .icons img:hover {
 
-  transform: scale(1.15);
+  transform: scale(1.25);
   filter: none;
   -webkit-filter: none;
+}
+
+.icon-wrapper {
+  width:22rem;
 }
