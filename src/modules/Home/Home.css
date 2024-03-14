@@ -3,15 +3,17 @@
 }
 
 .rounded-circle {
-    filter: gray;
-    -webkit-filter: grayscale(1);
+    border-color: gray !important;
+    /* filter: gray;
+    -webkit-filter: grayscale(1); */
     transition: all 0.3s;
 }
 
 .rounded-circle:hover {
     transform: scale(1.15);
-    filter: none;
-    -webkit-filter: none;
+    border-color:#FFC107
+    /* filter: none; */
+    /* -webkit-filter: none; */
 }
 
 .card {
