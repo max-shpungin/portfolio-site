@@ -1,10 +1,7 @@
 import IconPanel from '../IconPanel/IconPanel';
 import SocialIcons from '../SocialIcons/SocialIcons';
 
-import profilePic from '../../assets/profile-pic.png';
-import pinkCat from '../../assets/pink_cat.jpg';
 import orangeCafe from '../../assets/orange_cafe.jpg';
-import goldFrog from '../../assets/gold_frog.jpg';
 import warbler from '../../assets/warbler.png';
 import friender from '../../assets/friender.png';
 import './Home.css';
