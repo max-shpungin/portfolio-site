@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import Home from './modules/Home/Home';
 import Header from './modules/Header/Header';
 import Footer from './modules/Footer/Footer';
