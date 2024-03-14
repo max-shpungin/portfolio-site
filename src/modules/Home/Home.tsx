@@ -22,8 +22,7 @@ function Home() {
             <div className="intro col-6 mx-auto m-5">
                 <h1 className="h1 fs-2"> Hey! I'm <span className='name'>Max Shpungin</span>, a software engineer with a background in digital analytics.</h1>
                 <br/>
-                <p className='fw-semibold fs-3'> I love building
-                    <span className='cool-things'> cool things, my cat, and my
+                <p className='fw-semibold fs-3'> I love building <span className='cool-things'>cool things, my cat, and my
                         <span className='wife'> wife</span>
                     </span>.
                     <br /><br />
