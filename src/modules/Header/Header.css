@@ -4,6 +4,7 @@
 
 .contact {
   border-color: #FFC104;
+  background-color: white !important;
   position: fixed;
   z-index: 9;
 }
