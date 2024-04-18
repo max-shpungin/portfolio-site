@@ -11,23 +11,22 @@
 
 .rounded-circle:hover {
     transform: scale(1.15);
-    border-color:#FFC107
-    /* filter: none; */
-    /* -webkit-filter: none; */
+    border-color: #FFC107
+        /* filter: none; */
+        /* -webkit-filter: none; */
 }
 
 .card {
     transition: .3s;
 }
+
 .card:hover {
     transform: translateY(-1rem);
     filter: none;
     -webkit-filter: none;
 }
 
-.projects {
-    max-width: 700px;
-}
+
 
 .name {
     font-weight: bold;
@@ -43,9 +42,9 @@
 }
 
 .cool-things:hover {
-    background-color: #FFC104 ;
+    background-color: #FFC104;
     transition: .2s
-  }
+}
 
 
 .Featured {
