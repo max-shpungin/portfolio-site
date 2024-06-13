@@ -2,14 +2,40 @@
   background: linear-gradient(to top,#FFC104 40%, transparent 40%);
 }
 
-.contact {
+/* .contact {
   border-color: #FFC104;
   background-color: white !important;
+  color: black;
+  position: fixed;
+  z-index: 9;
+} */
+
+#contact-button.contact {
+  border-color: black;
+  background-color: white !important;
+  color: black;
   position: fixed;
   z-index: 9;
 }
 
-.contact:hover {
+/* .contact:hover {
+  background-color: #FFC104 !important;
+} */
+
+#contact-button.contact:hover {
+  background-color: #FFC104 !important;
+}
+
+.contact.submit-button {
+  border-color: black;
+  background-color: white !important;
+  color: black;
+  position: fixed;
+  z-index: 9;
+}
+
+
+.contact.submit-button:hover {
   background-color: #FFC104 !important;
 }
 
