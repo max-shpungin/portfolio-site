@@ -1,5 +1,5 @@
-import IconPanel from '../IconPanel/IconPanel';
-import SocialIcons from '../SocialIcons/SocialIcons';
+import IconPanel from '../../modules/IconPanel/IconPanel';
+import SocialIcons from '../../modules/SocialIcons/SocialIcons';
 
 import orangeCafe from '../../assets/orange_cafe.jpg';
 import warbler from '../../assets/warbler.png';
