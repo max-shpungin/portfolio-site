@@ -1,8 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/Home/Home";
 import Header from "./modules/Header/Header";
 import Footer from "./modules/Footer/Footer";
+
+import Home from "./pages/Home/Home";
+import CaseStudyEnvoy from "./pages/CaseStudyEnvoy/CaseStudyEnvoy"
 import NotFound from "./pages/NotFound/NotFound";
 
 import "./app.css";
@@ -14,6 +16,7 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="case-study-envoy" element={<CaseStudyEnvoy />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </BrowserRouter>

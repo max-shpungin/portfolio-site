@@ -1,0 +1,39 @@
+.Hero {
+    position: relative;
+
+    background-image:url("../../../assets/forestwindow.jpg");
+    background-size:cover;
+    background-position: center;
+    background-position-y: -5vh;
+    background-repeat: no-repeat;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color:white;
+}
+
+.Hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.651); /* Semi-transparent gray overlay */
+    z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+.Hero > * {
+    position: relative;
+    z-index: 2; /* Ensure the text is above the overlay */
+    width: 66%;
+    font-weight: bold;
+}
+
+.Hero > h1 {
+    font-size: 4rem;
+}
