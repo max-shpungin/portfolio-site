@@ -1,6 +1,8 @@
 import warbler from '../../assets/warbler.png';
 import friender from '../../assets/friender.png';
 import lmp from '../../assets/LMP.png';
+import envoy from '../../assets/envoy.png';
+import { Link } from 'react-router-dom';
 
 import "./FeaturedWork.css";
 
@@ -24,6 +26,17 @@ function FeaturedWork(){
                             </div>
                         </div>
 
+                        <div className="col">
+                            <div className="card shadow-sm rounded-5 border-2">
+                                <img src={envoy} className="card-img-top rounded-top-5" alt="Envoy case study" />
+                                <div className="card-body">
+                                    <h5 className="card-title">Envoy</h5>
+                                    <p className="card-text">The story of how I implemented Envoy's martech infrastructure, analytics, and consent platforms</p>
+                                    {/* <a className="btn btn-outline-primary" href='case-study-envoy'>Check it out!</a> */}
+                                    <Link className="btn btn-outline-primary" to={'/case-study-envoy'}>Check it out!</Link>
+                                </div>
+                            </div>
+                        </div>
                         <div className="col">
                             <div className="card shadow-sm rounded-5 border-2">
                                 <img src={warbler} className="card-img-top rounded-top-5" alt="Warbler home page" />
