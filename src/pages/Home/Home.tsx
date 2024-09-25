@@ -77,7 +77,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <SocialIcons />
         </>
     );
 }
