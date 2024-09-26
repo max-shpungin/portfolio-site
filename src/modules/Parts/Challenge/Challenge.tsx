@@ -4,37 +4,88 @@ function Challenge() {
     return (
         <div className="Challenge">
             <div className="challenge-container-wrapper">
-                <h2>The challenge was huge!</h2>
+                <h2>The Challenge</h2>
+                <p>
+                    Great teams iterate quickly - sometimes that comes with
+                    challenges
+                </p>
                 <div className="challenge-container">
                     {/* CARDS */}
                     <div className="card" style={{ width: "18rem" }}>
                         <div className="card-body">
-                            <h5 className="card-title">
-                                Non-Compliant Tech Stack
-                            </h5>
-                            <p className="card-text">
-                                Existing marketing technology failed to meet
-                                stringent privacy regulations, putting the
-                                company at risk.
-                            </p>
+                            <h5 className="card-title">Non-compliant Tools</h5>
+                            <div className="card-text">
+                                <p>
+                                    There's a natural tension between data
+                                    collection and the need to{" "}
+                                    <strong>protect users' privacy</strong> -
+                                    the tricky part is getting that balance
+                                    right.
+                                </p>
+
+                                <p>
+                                    Privacy frameworks like{" "}
+                                    <strong>CCPA</strong> and{" "}
+                                    <strong>GDPR</strong> have different
+                                    requirements for how visitors' data should
+                                    be managed - these rules vary not only by
+                                    region, but also govern different
+                                    classifications for how data can be used,
+                                    including analytics and advertising.
+                                </p>
+
+                                <p>
+                                    Envoy's marketing team needed the ability to
+                                    run <strong>effective</strong> and{" "}
+                                    <strong>compliant</strong> media.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div className="card" style={{ width: "18rem" }}>
                         <div className="card-body">
-                            <h5 className="card-title">Unreliable Metrics</h5>
-                            <p className="card-text">
-                                Lack of confidence in marketing performance data
-                                hindered decision-making and strategy
-                                development.
-                            </p>
+                            <h5 className="card-title">Ambiguous Success</h5>
+                            <div className="card-text">
+                                <p>
+                                    For an organization to succeed, teams need
+                                    to be pointed in the right direction. If
+                                    that direction isn't clear, teams naturally
+                                    interpret their own objectives - that leads
+                                    to <strong>confusion</strong> when those
+                                    definitions don't match.
+                                </p>
+                                <p>
+                                    The lack of a{" "}
+                                    <strong>unified measurement plan</strong>{" "}
+                                    meant that internal success metrics did not
+                                    always align to partners' performance
+                                    reports.
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div className="card" style={{ width: "18rem" }}>
                         <div className="card-body">
-                            <h5 className="card-title">Inefficient Systems</h5>
+                            <h5 className="card-title">Lack of Trust</h5>
                             <p className="card-text">
-                                Overlapping tools and inconsistent processes led
-                                to wasted resources and reduced productivity.
+                                <p>
+                                    Digital analytics is an inexact science -
+                                    there will always be gaps in data
+                                    collection, and marketing teams are used to
+                                    operating with that ambiguity.
+                                </p>
+
+                                <p>
+                                    But when those tools aren't collecting data
+                                    in a way that's relevant to the business,
+                                    the folks making decisions are flying blind.
+                                </p>
+
+                                <p>
+                                    Envoy's marketing team is elite - the{" "}
+                                    <strong>Google Analytics 4</strong>{" "}
+                                    deployment wasn't measuring up.
+                                </p>
                             </p>
                         </div>
                     </div>

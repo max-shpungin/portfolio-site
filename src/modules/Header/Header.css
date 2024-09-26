@@ -13,16 +13,13 @@
   background-color: #FFC104 !important;
 }
 
-.navbar-toggler-icon {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
-  border-radius: 50%;
-  position: fixed;
-  z-index: 9;
-}
+@media (max-width: 768px) {
+  .Header {
+    max-height: 90px;
+  }
+  .contact {
+    position: relative;
+    transform: scale(.80);
+  }
 
-.navbar-toggler-icon:hover {
-  background-color: #FFC104;
-  color: white;
 }
