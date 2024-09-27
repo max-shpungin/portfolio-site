@@ -2,12 +2,11 @@ import Hero from "../../modules/Parts/Hero/Hero";
 import Challenge from "../../modules/Parts/Challenge/Challenge";
 import Approach from "../../modules/Parts/Approach/Approach";
 import Delivery from "../../modules/Parts/Delivery/Delivery";
+import Divider from "../../modules/Parts/Divider/Divider";
 
 import measurement_plan from "../../assets/envoy_placeholder_blurme.png";
 
 import "./CaseStudyEnvoy.css";
-
-
 
 function CaseStudyEnvoy() {
     return (
@@ -15,7 +14,9 @@ function CaseStudyEnvoy() {
             <Hero />
             <Challenge />
             <Approach />
-            <Delivery {...delivery_content_mp} />
+            <Divider />
+            <Delivery {...delivery_details_mp} />
+            <Delivery {...delivery_details_datalayer}/>
             <Hero />
         </div>
     );
@@ -25,8 +26,19 @@ export default CaseStudyEnvoy;
 
 /**********************************CONTENT!***************************** */
 
+
+const delivery_datalayer_content = (
+    <></>
+)
+const delivery_details_datalayer = {
+    title: "Datalayer Code",
+    leader: "We've got the requirements - now how do we actually capture that data?",
+    imageUrl: "",
+    content: delivery_datalayer_content,
+};
+
 /** MEASUREMENT PLAN */
-const delivery_mp_content = (
+const delivery_content_mp = (
     <>
         <p>
             The measurement plan is a living document that captures key areas:
@@ -49,11 +61,9 @@ const delivery_mp_content = (
     </>
 );
 
-const delivery_content_mp = {
+const delivery_details_mp = {
     title: "Measurement Plan",
     leader: "Just what the heck is a lead anyway? And how do we measure it?",
     imageUrl: measurement_plan,
-    content: delivery_mp_content,
+    content: delivery_content_mp,
 };
-
-

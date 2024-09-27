@@ -57,7 +57,7 @@ function FeaturedWork() {
                                     className="btn btn-outline-primary"
                                     to={"/case-study-envoy"}
                                 >
-                                    Check it out!
+                                    Read About It
                                 </Link>
                             </div>
                         </div>

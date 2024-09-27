@@ -7,10 +7,6 @@
 
     background-color: rgb(184, 142, 35);
     color: #5d4e3d;
-    h2 {
-        color: whitesmoke;
-        padding-bottom: 1rem;
-    }
 }
 
 .delivery-container-wrapper {
@@ -135,5 +131,17 @@ h4 {
 @media (max-width: 768px) {
     .Delivery {
         padding: 1rem;
+    }
+
+    .body-text > ul {
+        margin-left: -1rem;
+    }
+
+    h4 {
+        align-self: center;
+    }
+
+    .body-leader {
+        text-align: left;
     }
 }

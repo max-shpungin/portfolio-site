@@ -18,7 +18,6 @@ function Delivery({ title, leader, imageUrl, content }: DeliveryProps) {
 
     return (
         <div className="Delivery">
-            <h2>What I Built</h2>
             <div className="delivery-container-wrapper ">
                 <div className="delivery-container">
                     <h4 onClick={toggleAccordion}>{title}</h4>

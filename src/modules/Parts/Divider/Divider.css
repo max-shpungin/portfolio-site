@@ -1,0 +1,30 @@
+.Divider {
+    position: relative;
+    height: 150px; /* Adjust the height as needed */
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Divider::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 300px;
+    z-index:1;
+}
+
+.Divider h2 {
+    position: relative;
+    z-index: 2; /* Ensure the h2 is above the overlay */
+    color: white; /* Adjust the text color as needed */
+}
