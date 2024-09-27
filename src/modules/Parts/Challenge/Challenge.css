@@ -20,9 +20,8 @@
     background-color: whitesmoke;
     border-radius: 10px;
 
-    h2 {
-
-    }
+    /* Add a small drop shadow */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .challenge-container {
