@@ -7,6 +7,7 @@ import Divider from "../../modules/Parts/Divider/Divider";
 import measurement_plan from "../../assets/envoy_placeholder_blurme.png";
 
 import "./CaseStudyEnvoy.css";
+import CustomDelivery from "../../modules/Parts/Delivery/CustomDelivery";
 
 function CaseStudyEnvoy() {
     return (
@@ -14,10 +15,10 @@ function CaseStudyEnvoy() {
             <Hero />
             <Challenge />
             <Approach />
-            <Divider />
+            <Divider content="What I Built" />
             <Delivery {...delivery_details_mp} />
-            <Delivery {...delivery_details_datalayer}/>
-            <Hero />
+            <CustomDelivery/>
+            <a href="#top"> I want uppies!</a>
         </div>
     );
 }
@@ -25,17 +26,6 @@ function CaseStudyEnvoy() {
 export default CaseStudyEnvoy;
 
 /**********************************CONTENT!***************************** */
-
-
-const delivery_datalayer_content = (
-    <></>
-)
-const delivery_details_datalayer = {
-    title: "Datalayer Code",
-    leader: "We've got the requirements - now how do we actually capture that data?",
-    imageUrl: "",
-    content: delivery_datalayer_content,
-};
 
 /** MEASUREMENT PLAN */
 const delivery_content_mp = (

@@ -44,7 +44,7 @@ function Challenge() {
                     </div>
                     <div className="card" style={{ width: "18rem" }}>
                         <div className="card-body">
-                            <h5 className="card-title">Ambiguous Success</h5>
+                            <h5 className="card-title">Ambiguous Metrics</h5>
                             <div className="card-text">
                                 <p>
                                     For an organization to succeed, teams need
