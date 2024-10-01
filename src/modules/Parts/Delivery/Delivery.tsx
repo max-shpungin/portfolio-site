@@ -1,6 +1,6 @@
-import "./Delivery.css";
+import { useState } from "react";
 
-import React, { useState } from "react";
+import "./Delivery.css";
 
 type DeliveryProps = {
     title: string;
