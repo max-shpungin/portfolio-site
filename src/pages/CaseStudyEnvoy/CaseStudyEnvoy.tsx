@@ -7,7 +7,7 @@ import Divider from "../../modules/Parts/Divider/Divider";
 import measurement_plan from "../../assets/envoy_placeholder_blurme.png";
 
 import "./CaseStudyEnvoy.css";
-import CustomDelivery from "../../modules/Parts/Delivery/CustomDelivery";
+import DatalayerDelivery from "../../modules/Parts/Delivery/DataLayerDelivery";
 
 function CaseStudyEnvoy() {
     return (
@@ -17,7 +17,7 @@ function CaseStudyEnvoy() {
             <Approach />
             <Divider content="What I Built" />
             <Delivery {...delivery_details_mp} />
-            <CustomDelivery/>
+            <DatalayerDelivery/>
         </div>
     );
 }

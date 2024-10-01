@@ -1,5 +1,5 @@
 import "./Delivery.css";
-import "./CustomDelivery.css";
+import "./AnalyticsDelivery.css";
 
 import ExampleForm from "../../Forms/ExampleForm";
 import dlpush from "../../../assets/dataLayerPush.png";
@@ -7,7 +7,7 @@ import dlresult from "../../../assets/dataLayerResult.png";
 
 import { useState } from "react";
 
-function CustomDelivery() {
+function DatalayerDelivery() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleAccordion = () => {
@@ -15,7 +15,7 @@ function CustomDelivery() {
     };
 
     return (
-        <div className="Delivery">
+        <div className="DatalayerDelivery">
             <div className="delivery-container-wrapper ">
                 <div className="delivery-container">
                     <h4 onClick={toggleAccordion}>Data Layer</h4>
@@ -102,4 +102,4 @@ function CustomDelivery() {
     );
 }
 
-export default CustomDelivery;
+export default DatalayerDelivery;
