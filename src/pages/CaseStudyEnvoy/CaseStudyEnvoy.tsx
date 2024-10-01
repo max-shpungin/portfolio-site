@@ -18,7 +18,6 @@ function CaseStudyEnvoy() {
             <Divider content="What I Built" />
             <Delivery {...delivery_details_mp} />
             <CustomDelivery/>
-            <a href="#top"> I want uppies!</a>
         </div>
     );
 }

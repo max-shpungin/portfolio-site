@@ -62,7 +62,7 @@ function FeaturedWork() {
                             </div>
                         </div>
                     </div>
-                    <div className="col">
+                    {/* <div className="col">
                         <div className="card shadow-sm rounded-5 border-2">
                             <img
                                 src={warbler}
@@ -88,7 +88,7 @@ function FeaturedWork() {
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="col">
                         <div className="card shadow-sm rounded-5 border-2">
@@ -107,12 +107,6 @@ function FeaturedWork() {
                                     href="https://github.com/max-shpungin/friender-frontend"
                                 >
                                     Github
-                                </a>
-                                <a
-                                    className="btn btn-outline-primary"
-                                    href="https://mes-friender-front.onrender.com/chatroom"
-                                >
-                                    View on Render
                                 </a>
                             </div>
                         </div>

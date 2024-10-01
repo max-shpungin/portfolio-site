@@ -14,9 +14,9 @@ import "./app.css";
 function App() {
     return (
         <div className="App container-fluid bg-light-subtle text-dark m-0 p-0">
-            <Header />
             <BrowserRouter>
                 <ScrollToTop />
+            <Header />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route
@@ -25,8 +25,8 @@ function App() {
                     />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
-            </BrowserRouter>
             <Footer />
+            </BrowserRouter>
         </div>
     );
 }
