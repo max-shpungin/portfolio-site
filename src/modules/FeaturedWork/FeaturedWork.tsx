@@ -1,4 +1,3 @@
-import warbler from "../../assets/warbler.png";
 import friender from "../../assets/friender.png";
 import lmp from "../../assets/LMP.png";
 import envoy from "../../assets/envoy.png";
