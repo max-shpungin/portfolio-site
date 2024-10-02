@@ -53,7 +53,7 @@ function FeaturedWork() {
                                 </p>
                                 {/* <a className="btn btn-outline-primary" href='case-study-envoy'>Check it out!</a> */}
                                 <Link
-                                    className="btn btn-outline-primary"
+                                    className="btn btn-primary"
                                     to={"/case-study-envoy"}
                                 >
                                     Read About It
@@ -102,7 +102,7 @@ function FeaturedWork() {
                                     A live chatroom built with websockets.
                                 </p>
                                 <a
-                                    className="btn btn-outline-dark me-1"
+                                    className="btn btn-outline-primary me-1"
                                     href="https://github.com/max-shpungin/friender-frontend"
                                 >
                                     Github

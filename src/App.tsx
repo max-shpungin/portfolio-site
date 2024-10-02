@@ -7,7 +7,10 @@ import Footer from "./modules/Footer/Footer";
 
 import Home from "./pages/Home/Home";
 import CaseStudyEnvoy from "./pages/CaseStudyEnvoy/CaseStudyEnvoy";
+import TestPage from "./pages/Dev/TestPage/TestPage";
 import NotFound from "./pages/NotFound/NotFound";
+
+import ContactForm from "./modules/Forms/ContactForm";
 
 import "./app.css";
 
@@ -16,16 +19,17 @@ function App() {
         <div className="App container-fluid bg-light-subtle text-dark m-0 p-0">
             <BrowserRouter>
                 <ScrollToTop />
-            <Header />
+                <Header />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route
                         path="/case-study-envoy"
                         element={<CaseStudyEnvoy />}
                     />
+                    <Route path="test" element={<TestPage />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
-            <Footer />
+                <Footer />
             </BrowserRouter>
         </div>
     );

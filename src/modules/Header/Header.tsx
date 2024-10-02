@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 
+import ModalForm from "../Modals/ModalForm/ModalForm";
+import ContactForm from "../Forms/ContactForm";
+
 import "./Header.css";
 
 /**
@@ -25,6 +28,7 @@ function Header() {
                         <strong>Contact Me</strong>
                     </span>
                 </a>
+                <ModalForm className="contact" form={<ContactForm/>} buttonText="wapash" />
                 {/* <i className="navbar-toggler-icon bi bi-list display-5 d-md-none text-center pt-1 shadow"></i> */}
             </div>
         </div>
