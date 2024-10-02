@@ -1,3 +1,17 @@
+.accent-bar {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+
+}
+
 .contact-text {
   background: linear-gradient(to top,#FFC104 40%, transparent 40%);
 }
@@ -5,7 +19,9 @@
 .contact {
   border-color: #FFC104;
   background-color: white !important;
+
   position: fixed;
+  right: 5rem;
   z-index: 9;
 }
 
@@ -13,16 +29,36 @@
   background-color: #FFC104 !important;
 }
 
-.navbar-toggler-icon {
-  background-color: white;
+.navLinks {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 1rem;
+}
+.navinavi-link{
+  background: linear-gradient(to top, #FFC104 35%, transparent 30%);
+  text-decoration: none;
   color: black;
-  border: 2px solid black;
-  border-radius: 50%;
-  position: fixed;
-  z-index: 9;
+  font-weight: 500;
+  font-size: xx-large;
+  padding-left: .25rem;
+  padding-right: .25rem;
+}
+.navinavi-link:hover{
+  background-color: #FFC104;
+  transition: .2s
 }
 
-.navbar-toggler-icon:hover {
-  background-color: #FFC104;
-  color: white;
+
+@media (max-width: 768px) {
+  .Header {
+    max-height: 90px;
+  }
+  .contact {
+    position: relative;
+    right: .25rem;
+    transform: scale(.80);
+  }
+
 }
+
+
