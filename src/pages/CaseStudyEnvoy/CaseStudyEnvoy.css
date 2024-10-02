@@ -10,7 +10,7 @@
     overflow: hidden;
 }
 
-.outtro-wrapper{
+.outtro-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,8 +26,6 @@
         margin-bottom: 1rem;
     }
 
-    h6 {
-    }
 }
 
 .outtro-content {
