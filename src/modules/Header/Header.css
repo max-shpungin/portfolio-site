@@ -6,6 +6,10 @@
 .nav-container {
   display: flex;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+
 }
 
 .contact-text {
@@ -17,7 +21,7 @@
   background-color: white !important;
 
   position: fixed;
-  right: 1rem;
+  right: 5rem;
   z-index: 9;
 }
 
@@ -25,14 +29,13 @@
   background-color: #FFC104 !important;
 }
 
-
 .navLinks {
   display: flex;
   justify-content: flex-start;
   margin-left: 1rem;
 }
 .navinavi-link{
-  background: linear-gradient(to top, #FFC104 30%, transparent 30%);
+  background: linear-gradient(to top, #FFC104 35%, transparent 30%);
   text-decoration: none;
   color: black;
   font-weight: 500;
@@ -52,9 +55,9 @@
   }
   .contact {
     position: relative;
+    right: .25rem;
     transform: scale(.80);
   }
-
 
 }
 
