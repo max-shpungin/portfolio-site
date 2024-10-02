@@ -126,7 +126,7 @@ const delivery_content_privacy = (
 
         <p>
             Respecting user privacy is a key value and tenet of the business,
-            and this principle guides system implentation and marketing
+            and this principle guides system implementation and marketing
             operations throughout the customer journey.
         </p>
     </>
