@@ -1,4 +1,20 @@
-#datalayer-output-example {
-    margin-top: 0;
-    object-fit: cover;
+.scrunched {
+
+    #example-analytics-report {
+        margin-top: 0;
+        object-fit: cover;
+        object-position: 0 -10.5rem;
+    }
 }
+
+@media (max-width: 940px) {
+    .scrunched {
+
+        #example-analytics-report {
+            margin-top: 0;
+            object-fit: cover;
+            object-position: 0;
+        }
+    }
+}
+

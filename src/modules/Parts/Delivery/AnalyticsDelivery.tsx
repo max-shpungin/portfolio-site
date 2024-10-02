@@ -1,13 +1,12 @@
 import "./Delivery.css";
 import "./AnalyticsDelivery.css";
 
-import ExampleForm from "../../Forms/ExampleForm";
-import dlpush from "../../../assets/dataLayerPush.png";
-import dlresult from "../../../assets/dataLayerResult.png";
+import analyticsreport2 from "../../../assets/analyticsreport2.png";
+import analyticsSegmentation from "../../../assets/analytics-segmentation.png";
 
 import { useState } from "react";
 
-function DatalayerDelivery() {
+function AnalyticsDelivery() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleAccordion = () => {
@@ -15,10 +14,10 @@ function DatalayerDelivery() {
     };
 
     return (
-        <div className="DatalayerDelivery">
+        <div className="Delivery">
             <div className="delivery-container-wrapper ">
                 <div className="delivery-container">
-                    <h4 onClick={toggleAccordion}>Data Layer</h4>
+                    <h4 onClick={toggleAccordion}>Analytics & Optimization</h4>
                     <div
                         className={`delivery-content ${
                             isOpen ? "expanded" : "scrunched"
@@ -26,8 +25,9 @@ function DatalayerDelivery() {
                     >
                         <img
                             className="delivery-image"
-                            src={dlpush}
-                            alt="example dataLayer push code"
+                            src={analyticsreport2}
+                            alt="example analytics report"
+                            id="example-analytics-report"
                         />
                         {!isOpen && (
                             <div
@@ -39,50 +39,41 @@ function DatalayerDelivery() {
                         )}
 
                         <div className="body-text">
-                            <h5>Event Capture</h5>
+                            <h5>Insights & Opportunities</h5>
                             <p>
-                                Once we've identified which events we care
-                                about, it's time to actually capture those
-                                actions so that we can analyze them.
+                                Dashboards can help visualize performance, but
+                                the real value lies in{" "}
+                                <strong>identifying areas of friction.</strong>{" "}
+                                Analysing user behavior allows us to identify
+                                areas for A/b tests to improve our digital
+                                properties.
+                            </p>
+
+                            <h5>Audience Activation</h5>
+
+                            <p>
+                                By segmenting our users based on key attributes
+                                like how they found us (a LinkedIn post, a
+                                Google search...) and what content they engaged
+                                with, we're able to better understand which
+                                areas of our sites and apps are under /
+                                overperforming.
                             </p>
 
                             <p>
-                                The best way to get this done is via the{" "}
-                                <strong>data layer</strong> - a global object
-                                that functions as a sort of go-between,
-                                capturing user interaction for platforms to then
-                                make use of.
+                                Critically: we can use those same user segments
+                                as audiences in our digital marketing campaigns.
+                                By integrating analytics and advertising
+                                platforms, we're able to{" "}
+                                <strong>unlock targeting opportunities</strong>{" "}
+                                for data driven optimization.
                             </p>
-                            <p>
-                                While the data layer is a general concept, in
-                                this case we're talking specifically about the{" "}
-                                <strong>Google Tag Manager dataLayer</strong> -
-                                a kind of data layer API created by Google that
-                                interacts natively with various advertising and
-                                analytics platforms.
-                            </p>
-                            <h5>Example</h5>
-
-                            <p>
-                                Curious to see how it works? Try out the form
-                                below! The output will be available in your
-                                browser console, just type 'dataLayer' and
-                                expand the list to see it.
-                            </p>
-                        </div>
-
-                        <div className="body-content">
-                            <ExampleForm />
-                        </div>
-
-                        <div className="body-text">
-                            <p>You should see something like this:</p>
                         </div>
 
                         <img
                             className="delivery-image"
                             id="datalayer-output-example"
-                            src={dlresult}
+                            src={analyticsSegmentation}
                             alt="an example dataLayer output"
                         />
 
@@ -92,14 +83,11 @@ function DatalayerDelivery() {
                     </div>
                 </div>
                 <div className="body-leader">
-                    <h6>
-                        We've got the requirements - now how do we actually
-                        capture those interactions as data?
-                    </h6>
+                    <h6>We've got the data - how do we actually use it?</h6>
                 </div>
             </div>
         </div>
     );
 }
 
-export default DatalayerDelivery;
+export default AnalyticsDelivery;

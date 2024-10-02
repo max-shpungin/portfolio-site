@@ -39,10 +39,16 @@
     color: #5D4E3D;
     background-color: #f6edd4;
     flex: 1 1 100%; /* Default to 3 cards across */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 @media (max-width: 768px) {
     .Challenge {
         padding: 1rem;
+    }
+
+    .challenge-container-wrapper {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 
     .challenge-container > .card {

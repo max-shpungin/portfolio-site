@@ -60,6 +60,11 @@
         padding: 1rem;
     }
 
+    .approach-container-wrapper {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     .approach-container > .card {
         flex: 1 1 100%; /* Default to 3 cards across */
         width: 33%;

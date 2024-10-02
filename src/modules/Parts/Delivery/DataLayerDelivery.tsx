@@ -15,7 +15,7 @@ function DatalayerDelivery() {
     };
 
     return (
-        <div className="DatalayerDelivery">
+        <div className="Delivery">
             <div className="delivery-container-wrapper ">
                 <div className="delivery-container">
                     <h4 onClick={toggleAccordion}>Data Layer</h4>
