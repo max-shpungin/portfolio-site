@@ -44,27 +44,50 @@
 
 }
 
-.outtro-button-top {
-    border: 1px solid #5d4e3d;
-    border-radius: 5px;
-    padding: 10px;
-    font-weight: 500;
-
+.outtro-button-top{
+    border: none;
+    padding: 0;
     background-color: rgb(0, 0, 0, 0);
 
-    margin-top: 1rem;
+    margin-top: 0;
 }
 
-.outtro-button-top:hover {
+.outtro-button-top > p {
+    padding: 0;
+background: linear-gradient(to top,#FFC104 30%, transparent 30%);
+}
+
+.outtro-button-top > p:hover {
+    background: #FFC104;
+    }
+
+/* .outtro-button-top:hover {
     background-color: #5d4e3d;
     color: whitesmoke;
     border: 1px solid white;
-}
+} */
 
 .outtro-image {
     max-height:400px;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.outtro-contact-embedded{
+    padding: 10px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background: #FFC104;
+    margin: .25rem;
+}
+
+.outtro-contact-embedded:hover {
+    color: white;
+    border-color: white;
+    background-color: #eeb200;
+
+    transition: .2s
 }
 
 @media (max-width: 768px) {
