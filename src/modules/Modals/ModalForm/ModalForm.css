@@ -25,10 +25,16 @@
 
     opacity: 0;
     visibility: hidden;
-    transition: 0.5s ease-in-out;
 
+    transition: all 0.2s ease-in-out;
+    z-index: 2;
 }
 
+.modal-container.visible {
+    opacity: 1;
+    visibility:visible;
+    pointer-events: auto;
+}
 
 .modal-form-backdrop {
     position: absolute;
@@ -41,11 +47,6 @@
     z-index: 1;
 }
 
-.modal-container.visible {
-    opacity: 2;
-    visibility:visible;
-    pointer-events: auto;
-}
 
 .modal-form-container {
     display:flex;
