@@ -1,45 +1,44 @@
-import { useState, MouseEvent } from "react";
+import { MouseEvent, useRef } from "react";
+
 import "./ModalForm.css";
 
 type ModalFormProps = {
     form: JSX.Element;
-    buttonText: string;
-    className?: string;
+    showModal: boolean;
+    handleClose: (event: MouseEvent) => void;
 };
 
-function ModalForm({ form, buttonText, className = "" }: ModalFormProps) {
-    const [showModal, setShowModal] = useState(false);
+function ModalForm({ form, showModal, handleClose }: ModalFormProps) {
+    const modalRef = useRef<HTMLDivElement>(null);
 
-    const handleOpen = (event: MouseEvent) => {
+    const handleOutsideClick = (event: MouseEvent) => {
+        // event.stopPropagation();
         event.preventDefault();
-        setShowModal(true);
-    };
 
-    const handleClose = (event: MouseEvent) => {
-        event.preventDefault();
-        setShowModal(false);
+        if (
+            showModal &&
+            modalRef.current &&
+            !modalRef.current.contains(event.target as Node)
+        ) {
+            handleClose(event);
+        }
     };
 
     return (
-        <div className="ModalContactForm">
-            <button className={`${className}`} onClick={handleOpen}>
-                {buttonText}
-            </button>
-
+        <div className="ModalForm" onClick={handleOutsideClick}>
             {showModal && (
-                <div
-                    className={`modal-container ${showModal ? "visible" : ""}`}
-                >
-                    <div className="modal-form-container">
-                        {form}
-                        <button
-                            type="button"
-                            className="btn-close modal-close-button"
-                            onClick={handleClose}
-                        />
-                    </div>
-                </div>
+                <div  className="modal-form-backdrop" />
             )}
+            <div className={`modal-container ${showModal ? "visible" : ""}`}>
+                <div className="modal-form-container" ref={modalRef}>
+                    <button
+                        type="button"
+                        className="btn-close btn-close-white modal-close-button"
+                        onClick={handleClose}
+                    />
+                    {form}
+                </div>
+            </div>
         </div>
     );
 }

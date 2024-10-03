@@ -3,11 +3,12 @@
     display: flex;
     flex-direction: column;
 
-    margin: 1rem;
+
     padding: 2.5rem;
     min-width: 500px;
 
-    border: 1px solid lightgray;
+    border: 1px solid gray;
+    background-color: #fdf6e9;
     border-radius: 10px;
 }
 
@@ -29,13 +30,17 @@
     border-radius: 5px;
 }
 
+#message:focus, #email:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #FFC104;
+}
+
 #message {
     min-height: 150px;
 }
 
 #contact-submit {
     margin-top: 2rem;
-    /* background-color: #FFC104; */
     background-color: white;
     border: 1px solid #FFC104;
     border-radius: 5px;

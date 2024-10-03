@@ -10,7 +10,6 @@ import CaseStudyEnvoy from "./pages/CaseStudyEnvoy/CaseStudyEnvoy";
 import TestPage from "./pages/Dev/TestPage/TestPage";
 import NotFound from "./pages/NotFound/NotFound";
 
-import ContactForm from "./modules/Forms/ContactForm";
 
 import "./app.css";
 
