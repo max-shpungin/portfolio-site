@@ -3,18 +3,22 @@ import "./ContactForm.css";
 import { FormEvent, ChangeEvent, useState } from "react";
 
 type ContactFormProps = {
+    name: string;
+};
+
+type contactFormData = {
     email: string;
     message: string;
 };
 
 type FormInputEvent = ChangeEvent<HTMLInputElement | HTMLTextAreaElement>;
 
-const defaultFormData: ContactFormProps = {
+const defaultFormData: contactFormData = {
     email: "",
     message: "",
 };
 
-function ContactForm() {
+function ContactForm({ name }: ContactFormProps) {
     const [formData, setFormData] = useState(defaultFormData);
 
     const handleChange = (event: FormInputEvent) => {
@@ -33,7 +37,12 @@ function ContactForm() {
     };
 
     return (
-        <form className="ContactForm" onSubmit={handleSubmit}>
+        <form
+            data-netlify="true"
+            name={name}
+            className="ContactForm"
+            onSubmit={handleSubmit}
+        >
             <div className="contact-form-container">
                 <div className="form-header">
                     <h5>Let's get in touch</h5>
@@ -62,7 +71,6 @@ function ContactForm() {
                 </div>
 
                 <button id="contact-submit">
-
                     <p>Send!</p>
                 </button>
             </div>

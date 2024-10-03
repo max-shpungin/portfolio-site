@@ -43,7 +43,7 @@ function Header() {
                     </span>
                 </button>
             </div>
-                <ModalForm form={<ContactForm/>} showModal={showModal} handleClose={handleClose} />
+                <ModalForm form={<ContactForm name="contact-header"/>} showModal={showModal} handleClose={handleClose} />
         </div>
     );
 }
