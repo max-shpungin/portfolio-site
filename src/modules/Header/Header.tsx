@@ -47,7 +47,7 @@ function Header() {
                     </span>
                 </button>
             </div>
-                <ModalForm form={<ContactForm handleSuccess={handleSuccess} name="contact-header"/>} showModal={showModal} handleClose={handleClose} />
+                <ModalForm form={<ContactForm handleSuccess={handleSuccess} name="contact"/>} showModal={showModal} handleClose={handleClose} />
         </div>
     );
 }
