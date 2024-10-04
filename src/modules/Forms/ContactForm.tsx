@@ -4,7 +4,7 @@ import { FormEvent, ChangeEvent, useState, useEffect } from "react";
 
 type ContactFormProps = {
     name: string;
-    handleSuccess: ()=>void;
+    handleSuccess: () => void;
 };
 
 type contactFormData = {
@@ -37,17 +37,15 @@ function ContactForm({ name, handleSuccess }: ContactFormProps) {
         setIsSubmitted(true);
     };
 
-    useEffect(()=>{
-        if(isSubmitted){
-            const timer = setTimeout(()=>{
-            handleSuccess();
-            setIsSubmitted(false);
+    useEffect(() => {
+        if (isSubmitted) {
+            const timer = setTimeout(() => {
+                handleSuccess();
+                setIsSubmitted(false);
             }, 2000);
-            return ()=>clearTimeout(timer);
+            return () => clearTimeout(timer);
         }
-    }, [isSubmitted, handleSuccess])
-
-
+    }, [isSubmitted, handleSuccess]);
 
     return (
         <form
@@ -56,8 +54,13 @@ function ContactForm({ name, handleSuccess }: ContactFormProps) {
             className="ContactForm"
             onSubmit={handleSubmit}
         >
+            <input type="hidden" name="form-name" value={name} />
             <div className="contact-form-container">
-            {isSubmitted && <div className="form-success"><p>Success!</p></div>}
+                {isSubmitted && (
+                    <div className="form-success">
+                        <p>Success!</p>
+                    </div>
+                )}
                 <div className="form-header">
                     <h5>Let's get in touch</h5>
                 </div>
@@ -85,8 +88,7 @@ function ContactForm({ name, handleSuccess }: ContactFormProps) {
                         required
                     />
                 </div>
-                <input type="hidden" name="form-name" value={name} />
-                <button id="contact-submit">
+                <button id="contact-submit" type="submit">
                     <p>Send!</p>
                 </button>
             </div>
