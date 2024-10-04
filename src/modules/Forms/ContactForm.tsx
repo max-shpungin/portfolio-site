@@ -56,6 +56,7 @@ function ContactForm({ name }: ContactFormProps) {
                         value={formData.email}
                         placeholder="jane@smith.com ..."
                         onChange={handleChange}
+                        required
                     />
                 </div>
 
@@ -67,6 +68,7 @@ function ContactForm({ name }: ContactFormProps) {
                         value={formData.message}
                         placeholder="write something ..."
                         onChange={handleChange}
+                        required
                     />
                 </div>
 
