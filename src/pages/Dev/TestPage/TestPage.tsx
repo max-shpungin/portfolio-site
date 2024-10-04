@@ -1,5 +1,3 @@
-import ContactForm from "../../../modules/Forms/ContactForm";
-
 function TestPage() {
 
 
@@ -7,7 +5,7 @@ function TestPage() {
         <div className="TestPage">
             Well - this is awkward.
 
-            <ContactForm name="wow"/>
+
         </div>
     )
 }
