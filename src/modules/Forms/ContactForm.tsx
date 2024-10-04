@@ -34,13 +34,7 @@ function ContactForm({ name, handleSuccess }: ContactFormProps) {
 
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
-          })
-            .then(() => setIsSubmitted(true))
-            .catch((error) => alert(error));
+        setIsSubmitted(true);
     };
 
     useEffect(()=>{
