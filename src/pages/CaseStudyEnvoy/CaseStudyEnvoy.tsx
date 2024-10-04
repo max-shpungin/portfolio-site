@@ -66,7 +66,12 @@ function Outtro() {
                             <p>email: max (at) workingwithmax dot com</p>
                         </h6>
                     </div>
-
+                    <button
+                        onClick={handleOpen}
+                        className="outtro-contact-embedded"
+                    >
+                        Get in touch!
+                    </button>
                     <br></br>
                     <a href="#top">
                         <button className="outtro-button-top">
