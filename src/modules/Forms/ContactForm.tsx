@@ -85,7 +85,7 @@ function ContactForm({ name, handleSuccess }: ContactFormProps) {
                         required
                     />
                 </div>
-
+                <input type="hidden" name="form-name" value={name} />
                 <button id="contact-submit">
                     <p>Send!</p>
                 </button>
