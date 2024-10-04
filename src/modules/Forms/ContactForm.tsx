@@ -58,6 +58,7 @@ function ContactForm({ name, handleSuccess }: ContactFormProps) {
             const timer = setTimeout(() => {
                 handleSuccess();
                 setIsSubmitted(false);
+                setFormData(defaultFormData);
             }, 2000);
             return () => clearTimeout(timer);
         }
