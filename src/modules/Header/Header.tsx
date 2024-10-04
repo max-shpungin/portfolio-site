@@ -25,6 +25,10 @@ function Header() {
         setShowModal(false)
     }
 
+    const handleSuccess = () => {
+        setShowModal(false);
+    }
+
     return (
         <div className="Header mb-4">
             <div className="accent-bar bg-yellow-500">
@@ -43,7 +47,7 @@ function Header() {
                     </span>
                 </button>
             </div>
-                <ModalForm form={<ContactForm name="contact-header"/>} showModal={showModal} handleClose={handleClose} />
+                <ModalForm form={<ContactForm handleSuccess={handleSuccess} name="contact-header"/>} showModal={showModal} handleClose={handleClose} />
         </div>
     );
 }

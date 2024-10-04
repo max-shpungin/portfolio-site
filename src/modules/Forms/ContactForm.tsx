@@ -1,9 +1,10 @@
 import "./ContactForm.css";
 
-import { FormEvent, ChangeEvent, useState } from "react";
+import { FormEvent, ChangeEvent, useState, useEffect } from "react";
 
 type ContactFormProps = {
     name: string;
+    handleSuccess: ()=>void;
 };
 
 type contactFormData = {
@@ -18,12 +19,11 @@ const defaultFormData: contactFormData = {
     message: "",
 };
 
-function ContactForm({ name }: ContactFormProps) {
+function ContactForm({ name, handleSuccess }: ContactFormProps) {
     const [formData, setFormData] = useState(defaultFormData);
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
     const handleChange = (event: FormInputEvent) => {
-        event.preventDefault();
-
         const { name, value } = event.target;
 
         setFormData((prevData) => ({
@@ -34,7 +34,20 @@ function ContactForm({ name }: ContactFormProps) {
 
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        setIsSubmitted(true);
     };
+
+    useEffect(()=>{
+        if(isSubmitted){
+            const timer = setTimeout(()=>{
+            handleSuccess();
+            setIsSubmitted(false);
+            }, 2000);
+            return ()=>clearTimeout(timer);
+        }
+    }, [isSubmitted, handleSuccess])
+
+
 
     return (
         <form
@@ -44,6 +57,7 @@ function ContactForm({ name }: ContactFormProps) {
             onSubmit={handleSubmit}
         >
             <div className="contact-form-container">
+            {isSubmitted && <div className="form-success"><p>Success!</p></div>}
                 <div className="form-header">
                     <h5>Let's get in touch</h5>
                 </div>

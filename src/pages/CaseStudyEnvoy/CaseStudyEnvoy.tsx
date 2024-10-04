@@ -51,6 +51,10 @@ function Outtro() {
         setShowModal(false);
     };
 
+    const handleSuccess = ()=> {
+        setShowModal(false);
+    }
+
     return (
         <div className="Outtro">
             <div className="outtro-wrapper">
@@ -75,7 +79,7 @@ function Outtro() {
                         </button>
                     </a>
                     <ModalForm
-                        form={<ContactForm name="contact-case-study-envoy" />}
+                        form={<ContactForm handleSuccess={handleSuccess} name="contact-case-study-envoy" />}
                         showModal={showModal}
                         handleClose={handleClose}
                     />
