@@ -79,7 +79,7 @@ function Outtro() {
                         </button>
                     </a>
                     <ModalForm
-                        form={<ContactForm handleSuccess={handleSuccess} name="contact" />}
+                        form={<ContactForm handleSuccess={handleSuccess} name="contact-case-study" />}
                         showModal={showModal}
                         handleClose={handleClose}
                     />
