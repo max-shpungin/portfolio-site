@@ -35,12 +35,19 @@ function ContactForm({ name, handleSuccess }: ContactFormProps) {
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
-        const encodedData = new URLSearchParams(formData).toString();
+        // Netlify normally requires a hidden input field with form-name attb
+        // that matches the name of the HTML version of this form.
+        // Because this is a stateful form, we need to add it manually so that
+        // it's included with the rest of the formData.
+
+        const encodedData = new URLSearchParams(formData);
+        encodedData.append("form-name", name) // needed for netlify
+        const encodedDataString = encodedData.toString();
 
         fetch("/", {
             method:"POST",
             headers: { "Content-Type":"application/x-www-form-urlencoded" },
-            body: encodedData,
+            body: encodedDataString,
         })
             .then(()=>setIsSubmitted(true))
             .catch((error)=>console.log(error));
@@ -63,7 +70,6 @@ function ContactForm({ name, handleSuccess }: ContactFormProps) {
             className="ContactForm"
             onSubmit={handleSubmit}
         >
-            <input type="hidden" name="form-name" value={name} />
             <div className="contact-form-container">
                 {isSubmitted && (
                     <div className="form-success">
