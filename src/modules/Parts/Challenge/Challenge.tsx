@@ -67,7 +67,7 @@ function Challenge() {
                     <div className="card" style={{ width: "18rem" }}>
                         <div className="card-body">
                             <h5 className="card-title">Lack of Trust</h5>
-                            <p className="card-text">
+                            <div className="card-text">
                                 <p>
                                     Digital analytics is an inexact science -
                                     there will always be gaps in data
@@ -86,7 +86,7 @@ function Challenge() {
                                     <strong>Google Analytics 4</strong>{" "}
                                     deployment wasn't measuring up.
                                 </p>
-                            </p>
+                            </div>
                         </div>
                     </div>
                 </div>
