@@ -12,10 +12,7 @@ import measurement_plan from "../../assets/envoy_placeholder_blurme.png";
 import privacy_options from "../../assets/privacyoptions.png";
 import outtro from "../../assets/outtro-forest.png";
 
-//####NEWNEWNEWNEWNWEN
-import ContactForm from "../../modules/Forms/ContactForm";
-import ModalForm from "../../modules/Modals/ModalForm/ModalForm";
-import { useState, MouseEvent } from "react";
+
 
 import "./CaseStudyEnvoy.css";
 
@@ -39,21 +36,8 @@ export default CaseStudyEnvoy;
 
 /******** OUTTRO SECTION THAT WILL BE A COMPONENT AT SOME POINT */
 function Outtro() {
-    const [showModal, setShowModal] = useState(false);
 
-    const handleOpen = (event: MouseEvent) => {
-        event.preventDefault();
-        setShowModal(true);
-    };
 
-    const handleClose = (event: MouseEvent) => {
-        event.preventDefault();
-        setShowModal(false);
-    };
-
-    const handleSuccess = ()=> {
-        setShowModal(false);
-    }
 
     return (
         <div className="Outtro">
@@ -66,23 +50,14 @@ function Outtro() {
                             <p>email: max (at) workingwithmax dot com</p>
                         </h6>
                     </div>
-                    <button
-                        onClick={handleOpen}
-                        className="outtro-contact-embedded"
-                    >
-                        Get in touch!
-                    </button>
+
                     <br></br>
                     <a href="#top">
                         <button className="outtro-button-top">
                             <p>Take me to the top!</p>
                         </button>
                     </a>
-                    <ModalForm
-                        form={<ContactForm handleSuccess={handleSuccess} name="contact" />}
-                        showModal={showModal}
-                        handleClose={handleClose}
-                    />
+
                 </div>
             </div>
         </div>
