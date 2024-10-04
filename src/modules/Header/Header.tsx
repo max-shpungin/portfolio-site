@@ -1,8 +1,6 @@
-import { useState, MouseEvent } from "react";
 import { Link } from "react-router-dom";
 
-import ContactForm from "../Forms/ContactForm";
-import ModalForm from "../Modals/ModalForm/ModalForm";
+
 
 import "./Header.css";
 
@@ -13,21 +11,6 @@ import "./Header.css";
 
 function Header() {
 
-    const[showModal, setShowModal] = useState(false);
-
-    const handleOpen = (event: MouseEvent) => {
-        event.preventDefault();
-        setShowModal(true);
-    };
-
-    const handleClose = (event:MouseEvent) => {
-        event.preventDefault();
-        setShowModal(false)
-    }
-
-    const handleSuccess = () => {
-        setShowModal(false);
-    }
 
     return (
         <div className="Header mb-4">
@@ -38,16 +21,8 @@ function Header() {
             <div className="navLinks">
                 <Link className="navinavi-link" to="/">home</Link>
             </div>
-                <button
-                    className="contact shadow d-md-flex btn btn-lg border-3 btn-outline-dark"
-                    onClick={handleOpen}
-                >
-                    <span className="contact-text">
-                        <strong>Contact Me</strong>
-                    </span>
-                </button>
+
             </div>
-                <ModalForm form={<ContactForm handleSuccess={handleSuccess} name="contact"/>} showModal={showModal} handleClose={handleClose} />
         </div>
     );
 }
