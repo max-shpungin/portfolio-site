@@ -4,7 +4,7 @@ import { FormEvent, ChangeEvent, useState, useEffect } from "react";
 
 type ContactFormProps = {
     name: string;
-    handleSuccess: ()=>void;
+    handleSuccess: () => void;
 };
 
 type contactFormData = {
@@ -34,20 +34,34 @@ function ContactForm({ name, handleSuccess }: ContactFormProps) {
 
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        setIsSubmitted(true);
+
+        // Netlify normally requires a hidden input field with form-name attb
+        // that matches the name of the HTML version of this form.
+        // Because this is a stateful form, we need to add it manually so that
+        // it's included with the rest of the formData.
+
+        const encodedData = new URLSearchParams(formData);
+        encodedData.append("form-name", name) // needed for netlify
+        const encodedDataString = encodedData.toString();
+
+        fetch("/", {
+            method:"POST",
+            headers: { "Content-Type":"application/x-www-form-urlencoded" },
+            body: encodedDataString,
+        })
+            .then(()=>setIsSubmitted(true))
+            .catch((error)=>console.log(error));
     };
 
-    useEffect(()=>{
-        if(isSubmitted){
-            const timer = setTimeout(()=>{
-            handleSuccess();
-            setIsSubmitted(false);
+    useEffect(() => {
+        if (isSubmitted) {
+            const timer = setTimeout(() => {
+                handleSuccess();
+                setIsSubmitted(false);
             }, 2000);
-            return ()=>clearTimeout(timer);
+            return () => clearTimeout(timer);
         }
-    }, [isSubmitted, handleSuccess])
-
-
+    }, [isSubmitted, handleSuccess]);
 
     return (
         <form
@@ -57,7 +71,11 @@ function ContactForm({ name, handleSuccess }: ContactFormProps) {
             onSubmit={handleSubmit}
         >
             <div className="contact-form-container">
-            {isSubmitted && <div className="form-success"><p>Success!</p></div>}
+                {isSubmitted && (
+                    <div className="form-success">
+                        <p>Success!</p>
+                    </div>
+                )}
                 <div className="form-header">
                     <h5>Let's get in touch</h5>
                 </div>
@@ -85,8 +103,7 @@ function ContactForm({ name, handleSuccess }: ContactFormProps) {
                         required
                     />
                 </div>
-                <input type="hidden" name="form-name" value={name} />
-                <button id="contact-submit">
+                <button id="contact-submit" type="submit">
                     <p>Send!</p>
                 </button>
             </div>
