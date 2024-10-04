@@ -13,7 +13,7 @@ function ModalForm({ form, showModal, handleClose }: ModalFormProps) {
 
     const handleOutsideClick = (event: MouseEvent) => {
         // event.stopPropagation();
-        event.preventDefault();
+        // event.preventDefault();
 
         if (
             showModal &&
