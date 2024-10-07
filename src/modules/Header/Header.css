@@ -17,22 +17,22 @@
 
 .contact {
   margin-top: .5rem;
-    padding: .5rem;
-    background-color: white;
-    border: 1px solid #FFC104;
-    border-radius: 5px;
+  padding: .5rem;
+  background-color: white;
+  border: 1px solid #FFC104;
+  border-radius: 5px;
 
-    padding: .5rem;
-    border-radius: 5px;
+  padding: .5rem;
+  border-radius: 5px;
 
-    position: fixed;
-    right: 5rem;
-    z-index: 9;
+  position: fixed;
+  right: 5rem;
+  z-index: 9;
 
-    font-weight: 500;
-    font-size: large;
+  font-weight: 500;
+  font-size: large;
 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .contact:hover {

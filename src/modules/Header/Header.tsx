@@ -12,22 +12,21 @@ import "./Header.css";
  */
 
 function Header() {
-
-    const[showModal, setShowModal] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
     const handleOpen = (event: MouseEvent) => {
         event.preventDefault();
         setShowModal(true);
     };
 
-    const handleClose = (event:MouseEvent) => {
+    const handleClose = (event: MouseEvent) => {
         event.preventDefault();
-        setShowModal(false)
-    }
+        setShowModal(false);
+    };
 
     const handleSuccess = () => {
         setShowModal(false);
-    }
+    };
 
     return (
         <div className="Header mb-4">
@@ -35,19 +34,27 @@ function Header() {
                 <span className="fs-4"></span>
             </div>
             <div className="nav-container">
-            <div className="navLinks">
-                <Link className="navinavi-link" to="/">home</Link>
-            </div>
-                <button
-                    className="contact"
-                    onClick={handleOpen}
-                >
+                <div className="navLinks">
+                    <Link className="navinavi-link" to="/">
+                        home
+                    </Link>
+                </div>
+                <button className="contact" onClick={handleOpen}>
                     <span className="contact-text">
                         <strong>Contact Me</strong>
                     </span>
                 </button>
             </div>
-                <ModalForm form={<ContactForm handleSuccess={handleSuccess} name="contact-header"/>} showModal={showModal} handleClose={handleClose} />
+            <ModalForm
+                form={
+                    <ContactForm
+                        handleSuccess={handleSuccess}
+                        name="contact-header"
+                    />
+                }
+                showModal={showModal}
+                handleClose={handleClose}
+            />
         </div>
     );
 }

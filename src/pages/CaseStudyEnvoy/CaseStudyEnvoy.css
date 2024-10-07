@@ -92,6 +92,18 @@ background: linear-gradient(to top,#FFC104 30%, transparent 30%);
     transition: .2s
 }
 
+.contact-form-container {
+    margin: 1rem;
+}
+
+.form-header > h5 {
+    font-size: medium;
+}
+
+.form-input-group > label {
+    align-self: flex-start;
+}
+
 @media (max-width: 768px) {
     .outtro-content {
         margin: 0;
