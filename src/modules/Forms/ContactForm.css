@@ -78,6 +78,7 @@
 
 #contact-submit > span {
     background: linear-gradient(to top,#FFC104 30%, transparent 40%);
+    color: black;
     margin: .25rem;
 }
 

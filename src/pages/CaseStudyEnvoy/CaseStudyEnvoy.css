@@ -54,12 +54,12 @@
     color: black;
 }
 
-.outtro-button-top > p {
+.outtro-button-top > span {
     padding: 0;
 background: linear-gradient(to top,#FFC104 30%, transparent 30%);
 }
 
-.outtro-button-top > p:hover {
+.outtro-button-top > span:hover {
     background: #FFC104;
     }
 
@@ -80,6 +80,7 @@ background: linear-gradient(to top,#FFC104 30%, transparent 30%);
     font-weight: 500;
     border: none;
     border-radius: 5px;
+    color: black;
     background: #FFC104;
     margin: .25rem;
 }
