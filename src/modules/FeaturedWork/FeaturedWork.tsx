@@ -12,6 +12,31 @@ function FeaturedWork() {
                 <h2 className="fw-bold p-5 display-4">Featured Work</h2>
 
                 <div className="row row-cols-1 row-cols-md-3 g-3 justify-content-center">
+                <div className="col">
+                        <div className="card shadow-sm rounded-5 border-2">
+                            <img
+                                src={envoy}
+                                className="card-img-top rounded-top-5"
+                                alt="Envoy case study"
+                            />
+                            <div className="card-body">
+                                <h5 className="card-title">Envoy</h5>
+                                <p className="card-text">
+                                    The story of how I implemented Envoy's
+                                    martech infrastructure, analytics, and
+                                    consent platforms
+                                </p>
+                                {/* <a className="btn btn-outline-primary" href='case-study-envoy'>Check it out!</a> */}
+                                <Link
+                                    className="btn btn-primary"
+                                    to={"/case-study-envoy"}
+                                >
+                                    Read About It
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="col">
                         <div className="card shadow-sm rounded-5 border-2">
                             <img
@@ -37,30 +62,7 @@ function FeaturedWork() {
                         </div>
                     </div>
 
-                    <div className="col">
-                        <div className="card shadow-sm rounded-5 border-2">
-                            <img
-                                src={envoy}
-                                className="card-img-top rounded-top-5"
-                                alt="Envoy case study"
-                            />
-                            <div className="card-body">
-                                <h5 className="card-title">Envoy</h5>
-                                <p className="card-text">
-                                    The story of how I implemented Envoy's
-                                    martech infrastructure, analytics, and
-                                    consent platforms
-                                </p>
-                                {/* <a className="btn btn-outline-primary" href='case-study-envoy'>Check it out!</a> */}
-                                <Link
-                                    className="btn btn-primary"
-                                    to={"/case-study-envoy"}
-                                >
-                                    Read About It
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
+
                     {/* <div className="col">
                         <div className="card shadow-sm rounded-5 border-2">
                             <img
