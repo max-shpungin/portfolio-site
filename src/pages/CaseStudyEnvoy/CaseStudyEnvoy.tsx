@@ -73,10 +73,8 @@ function Outtro() {
                         Get in touch!
                     </button>
                     <br></br>
-                    <a href="#top">
-                        <button className="outtro-button-top">
+                    <a href="#top" className="outtro-button-top">
                             <p>Take me to the top!</p>
-                        </button>
                     </a>
                     <ModalForm
                         form={<ContactForm handleSuccess={handleSuccess} name="contact-case-study" />}

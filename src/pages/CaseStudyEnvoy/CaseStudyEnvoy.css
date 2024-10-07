@@ -50,6 +50,8 @@
     background-color: rgb(0, 0, 0, 0);
 
     margin-top: 0;
+    text-decoration: none;
+    color: black;
 }
 
 .outtro-button-top > p {

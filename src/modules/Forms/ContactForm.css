@@ -63,6 +63,7 @@
 
 #contact-submit {
     margin-top: 2rem;
+    padding: .5rem;
     background-color: white;
     border: 1px solid #FFC104;
     border-radius: 5px;
@@ -75,14 +76,14 @@
     box-shadow:0 0 5px rgba(0,0,0,0.1);
 }
 
-#contact-submit > p {
+#contact-submit > span {
     background: linear-gradient(to top,#FFC104 30%, transparent 40%);
     margin: .25rem;
 }
 
 #contact-submit:hover {
     color: white;
-    border-color: black;
+    /* border-color: black; */
     background-color: #FFC104;
 
     transition: .2s
