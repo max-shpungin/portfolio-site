@@ -50,14 +50,16 @@
     background-color: rgb(0, 0, 0, 0);
 
     margin-top: 0;
+    text-decoration: none;
+    color: black;
 }
 
-.outtro-button-top > p {
+.outtro-button-top > span {
     padding: 0;
 background: linear-gradient(to top,#FFC104 30%, transparent 30%);
 }
 
-.outtro-button-top > p:hover {
+.outtro-button-top > span:hover {
     background: #FFC104;
     }
 
@@ -78,6 +80,7 @@ background: linear-gradient(to top,#FFC104 30%, transparent 30%);
     font-weight: 500;
     border: none;
     border-radius: 5px;
+    color: black;
     background: #FFC104;
     margin: .25rem;
 }
@@ -88,6 +91,18 @@ background: linear-gradient(to top,#FFC104 30%, transparent 30%);
     background-color: #eeb200;
 
     transition: .2s
+}
+
+.contact-form-container {
+    margin: 1rem;
+}
+
+.form-header > h5 {
+    font-size: medium;
+}
+
+.form-input-group > label {
+    align-self: flex-start;
 }
 
 @media (max-width: 768px) {

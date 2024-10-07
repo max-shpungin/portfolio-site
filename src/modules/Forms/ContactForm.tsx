@@ -105,7 +105,7 @@ function ContactForm({ name, handleSuccess }: ContactFormProps) {
                     />
                 </div>
                 <button id="contact-submit" type="submit">
-                    <p>Send!</p>
+                    <span>Send!</span>
                 </button>
             </div>
         </form>
