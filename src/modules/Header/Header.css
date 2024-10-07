@@ -1,63 +1,72 @@
 .accent-bar {
-  padding: 1rem;
-  margin-bottom: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 .nav-container {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  /* position: relative; */
-
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* position: relative; */
 }
 
 .contact-text {
-  background: linear-gradient(to top,#FFC104 40%, transparent 40%);
+    background: linear-gradient(to top, #ffc104 40%, transparent 40%);
 }
 
 .contact {
-  border-color: #FFC104;
-  background-color: white !important;
+  margin-top: .5rem;
+    padding: .5rem;
+    background-color: white;
+    border: 1px solid #FFC104;
+    border-radius: 5px;
 
-  position: fixed;
-  right: 5rem;
-  z-index: 9;
+    padding: .5rem;
+    border-radius: 5px;
 
+    position: fixed;
+    right: 5rem;
+    z-index: 9;
+
+    font-weight: 500;
+    font-size: large;
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .contact:hover {
-  background-color: #FFC104 !important;
+    background-color: #ffc104 !important;
+    color: white;
+    transition: .2s;
 }
 
 .navLinks {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 1rem;
 }
-.navinavi-link{
-  background: linear-gradient(to top, #FFC104 35%, transparent 30%);
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-  font-size: xx-large;
-  padding-left: .25rem;
-  padding-right: .25rem;
+.navinavi-link {
+    background: linear-gradient(to top, #ffc104 35%, transparent 30%);
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: xx-large;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
 }
-.navinavi-link:hover{
-  background-color: #FFC104;
-  transition: .2s
+.navinavi-link:hover {
+    background-color: #ffc104;
+    transition: 0.2s;
 }
-
 
 @media (max-width: 768px) {
-  .Header {
-    max-height: 90px;
-  }
-  .contact {
-    position: relative;
-    right: .25rem;
-    transform: scale(.80);
-  }
-
+    .Header {
+        max-height: 90px;
+    }
+    .contact {
+        position: relative;
+        right: 1rem;
+        /* transform: scale(0.8); */
+    }
 }

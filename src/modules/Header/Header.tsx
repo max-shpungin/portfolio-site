@@ -39,7 +39,7 @@ function Header() {
                 <Link className="navinavi-link" to="/">home</Link>
             </div>
                 <button
-                    className="contact shadow d-md-flex btn btn-lg border-3 btn-outline-dark"
+                    className="contact"
                     onClick={handleOpen}
                 >
                     <span className="contact-text">
