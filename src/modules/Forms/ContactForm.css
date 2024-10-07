@@ -83,9 +83,13 @@
 }
 
 #contact-submit:hover {
-    color: white;
+    span {
+
+        color: white;
+        background: none;
+    }
     /* border-color: black; */
-    background-color: #FFC104;
+    background-color: #eeb200;
 
     transition: .2s
 }

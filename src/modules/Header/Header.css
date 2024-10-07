@@ -37,9 +37,12 @@
 }
 
 .contact:hover {
-    background-color: #ffc104 !important;
-    color: white;
+    background-color: #eeb200;
     transition: .2s;
+    .contact-text {
+      color: white;
+      background: none;
+    }
 }
 
 .navLinks {
