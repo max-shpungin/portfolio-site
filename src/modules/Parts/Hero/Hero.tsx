@@ -6,11 +6,8 @@ function Hero() {
         <div className="Hero">
              <div className="hero-wrapper">
 
-            <h1>
-                <span>Chaos to Confidence: </span>
-                <span>Envoy's Analytics Transformation</span>
-            </h1>
-            <p>From compliance headaches to shaky data, how I helped Envoy regain control of their digital analytics</p>
+            <h1>Envoy's Analytics Evolution</h1>
+            <p>How I helped Envoy take control of their digital analytics stack</p>
 </div>
         </div>
     )

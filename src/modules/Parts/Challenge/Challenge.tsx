@@ -7,7 +7,7 @@ function Challenge() {
                 <h2>The Challenge</h2>
                 <p>
                     Great teams iterate quickly - sometimes that comes with
-                    challenges
+                    challenges.
                 </p>
                 <div className="challenge-container">
                     {/* CARDS */}
