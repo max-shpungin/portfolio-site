@@ -72,9 +72,6 @@ export default function ExampleForm() {
                         Email
                     </label>
                     <div className="input-group">
-                        <div className="input-group-prepend">
-                            <div className="input-group-text">@</div>
-                        </div>
                         <input
                             type="email"
                             className="form-control"

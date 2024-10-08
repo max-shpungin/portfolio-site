@@ -9,7 +9,10 @@ function Approach() {
         <div className="Approach">
             <div className="approach-container-wrapper">
                 <h2>The Approach</h2>
-                <p>There's no such thing as a one-size fits all solution. </p>
+                <p>
+                    What value are we creating? Who is the audience? How are we
+                    going to get there?
+                </p>
                 <div className="approach-container">
                     {/* CARDS */}
                     <div className="card" style={{ width: "18rem" }}>
@@ -21,14 +24,16 @@ function Approach() {
                         <div className="card-body">
                             <h5 className="card-title"> Discover </h5>
                             <p className="card-text">
-                                Conducted in-depth stakeholder interviews and
-                                comprehensive system reviews to understand the
-                                current landscape.
+                                The first step in any project is understanding
+                                the lay of the land. I conducted in-depth
+                                stakeholder interviews and system reviews to
+                                paint a full picture of our current and future
+                                state.
                             </p>
                         </div>
                     </div>
                     <div className="card" style={{ width: "18rem" }}>
-                    <img
+                        <img
                             src={two}
                             className="card-img-top rounded-2"
                             alt="Live Music Project home page"
@@ -36,14 +41,16 @@ function Approach() {
                         <div className="card-body">
                             <h5 className="card-title">Design</h5>
                             <p className="card-text">
-                                Crafted a tailored end-state solution, ensuring
-                                buy-in from all team members for seamless
-                                implementation.
+                                With a clear measurement plan in place, the
+                                changes we needed to make became self evident -
+                                it was just a matter of designing the schema and
+                                data layer code necessary to gather consent and
+                                corresponding measurement signals.
                             </p>
                         </div>
                     </div>
                     <div className="card" style={{ width: "18rem" }}>
-                    <img
+                        <img
                             src={three}
                             className="card-img-top rounded-2"
                             alt="Live Music Project home page"
@@ -51,9 +58,11 @@ function Approach() {
                         <div className="card-body">
                             <h5 className="card-title">Deploy</h5>
                             <p className="card-text">
-                                Executed technical and process changes,
-                                transforming the marketing technology ecosystem
-                                for optimal performance.
+                                Once we had our goals identified and a plan
+                                agreed to, it was time to make it happen.
+                                Deployment here was a mix of tag management,
+                                data layer code development, and platform
+                                configuration.
                             </p>
                         </div>
                     </div>
